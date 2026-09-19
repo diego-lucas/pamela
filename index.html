@@ -598,7 +598,6 @@
       popup.classList.remove('mimo-visible');
     }
     window.setTimeout(function(){ popup.classList.add('mimo-visible'); }, 500);
-    window.setTimeout(closePopup, 8000);
     popup.querySelector('.mimo-popup-close').addEventListener('click', closePopup);
     popup.addEventListener('click', function(e){
       if(e.target === popup) closePopup();
