@@ -372,6 +372,25 @@
     background:var(--gold);
   }
 
+  .tag-list{
+    list-style:none;
+    padding:0;
+    margin:26px auto 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    max-width:700px;
+  }
+  .tag-list li{
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:8px 18px;
+    font-size:0.88rem;
+    color:var(--ink-soft);
+    background:var(--parchment-2);
+  }
+
   /* ---------- Quarteto ---------- */
   .quarteto{
     background:var(--wine-deep);
@@ -498,9 +517,9 @@
     <a href="#top" class="brand">Pâmela Cavalcante</a>
     <nav class="links">
       <a href="#sobre">Sobre</a>
-      <a href="#ensino">Aulas</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#quarteto">Quarteto</a>
+      <a href="#formacao">Formação</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#aulas-eventos">Aulas &amp; Eventos</a>
       <a href="https://wa.me/5585994099690" target="_blank" rel="noopener" class="nav-cta">Contato</a>
     </nav>
   </div>
@@ -514,7 +533,7 @@
       <div class="fade-in">
         <div class="eyebrow-line">Musicista</div>
         <h1>Pâmela<span>Cavalcante</span></h1>
-        <p class="hero-sub">Violino e piano a serviço da música clássica — em aulas individuais, cerimônias e apresentações que dão à cada ocasião a trilha sonora que ela merece.</p>
+        <p class="hero-sub">Sou violinista, educadora musical e pós-graduada em Musicoterapia — uno técnica, arte e sensibilidade humana em cada aula e apresentação.</p>
         <div class="hero-actions">
           <a class="btn-primary" href="https://wa.me/5585994099690" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
           <a class="btn-ghost" href="#sobre">Conhecer o trabalho</a>
@@ -542,8 +561,9 @@
     <div class="wrap sobre-grid">
       <div>
         <h2>Sobre</h2>
-        <p class="dropcap">Pâmela une formação acadêmica e sensibilidade musicoterapêutica em cada aula e apresentação. Violinista e pianista, dedica-se a formar alunos de todas as idades e a emprestar sua música a momentos que pedem beleza e presença — de recitais a cerimônias de casamento.</p>
-        <p style="margin-top:16px;">Sua abordagem de ensino combina técnica clássica sólida com escuta atenta a cada aluno, entendendo que aprender um instrumento é também um processo pessoal, feito de ritmo próprio e histórias particulares. Além do ensino, atua como integrante da Orquestra Sinfônica da Universidade Estadual do Ceará (OSUECE) e do Quarteto Amabille.</p>
+        <p class="dropcap">Sou violinista, educadora musical e pós-graduada em Musicoterapia. Sou licenciada em Música pela Universidade Estadual do Ceará (UECE) e atuo como professora de violino e iniciação ao piano, com um trabalho voltado para a formação técnica, artística e humana dos meus alunos.</p>
+        <p style="margin-top:16px;">Como instrumentista, integro grupos e projetos musicais, participando de apresentações, concertos e eventos culturais. Minha formação em Musicoterapia amplia meu olhar pedagógico, permitindo uma atuação sensível às necessidades individuais de cada estudante e processos de aprendizagem mais significativos.</p>
+        <p style="margin-top:16px;">Minha trajetória é marcada pelo compromisso com a excelência musical, pela constante busca por aperfeiçoamento profissional e pela valorização da música como ferramenta de desenvolvimento, expressão e inclusão.</p>
       </div>
       <div class="creds">
         <div class="creds-title">Formação</div>
@@ -552,38 +572,41 @@
           <span>Universidade Estadual do Ceará (UECE)</span>
         </div>
         <div class="cred-item">
-          <h3>Especialização em Musicoterapia</h3>
-          <span>Conservatório Brasileiro de Música (CBM)</span>
-        </div>
-        <div class="cred-item">
-          <h3>Integrante do Quarteto Amabille</h3>
-          <span>Apresentações em cerimônias e eventos</span>
-        </div>
-        <div class="cred-item">
-          <h3>Orquestra Sinfônica da UECE</h3>
-          <span>Integrante da OSUECE</span>
+          <h3>Pós-graduação em Musicoterapia</h3>
+          <span>Centro Biomédico de Música (CBM), São Paulo</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ENSINO / EVENTOS -->
-  <div class="split">
-    <div class="split-panel" id="ensino">
-      <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
-        <path d="M24 6c1.6 0 3 1.3 3 3s-1.4 3-3 3-3-1.3-3-3 1.4-3 3-3Z"/>
-        <path d="M24 12v10"/>
-        <path d="M17 22c-4 5-5 9-2 13-3 1-4 5-1 8-1 3 1 6 6 6.4 5-.4 7-3.4 6-6.4 3-3 2-7-1-8 3-4 2-8-2-13-2-1.6-4-1.6-6 0Z"/>
-      </svg>
-      <h3>Aulas de violino e piano</h3>
-      <p>Aulas individuais e personalizadas, para iniciantes e alunos em aperfeiçoamento, presenciais ou combinadas conforme a rotina de cada um.</p>
-      <ul class="panel-list">
-        <li>Violino e piano para crianças, jovens e adultos</li>
-        <li>Preparação para recitais, provas e vestibulares de música</li>
-        <li>Acompanhamento de repertório clássico e popular</li>
+  <div class="staff-divider">
+    <svg class="staff" viewBox="0 0 560 34" preserveAspectRatio="none">
+      <line x1="0" y1="4" x2="560" y2="4"/>
+      <line x1="0" y1="12" x2="560" y2="12"/>
+      <line x1="0" y1="20" x2="560" y2="20"/>
+      <line x1="0" y1="28" x2="560" y2="28"/>
+    </svg>
+  </div>
+
+  <!-- FORMAÇÃO COMPLEMENTAR -->
+  <section class="section-tight" id="formacao">
+    <div class="wrap">
+      <div class="creds-title" style="text-align:center;">Formação complementar</div>
+      <h2 style="text-align:center; font-size:2rem; margin-top:8px;">Aperfeiçoamento contínuo</h2>
+      <p style="text-align:center; max-width:60ch; margin:18px auto 0; color:var(--ink-soft);">Ao longo da minha trajetória, participei de festivais, cursos de aperfeiçoamento e atividades formativas voltadas para:</p>
+      <ul class="tag-list">
+        <li>Música de câmara</li>
+        <li>Cordas friccionadas</li>
+        <li>Musicalização infantil</li>
+        <li>Ensino coletivo de instrumentos</li>
+        <li>Práticas pedagógicas musicais</li>
       </ul>
     </div>
-    <div class="split-panel" id="eventos">
+  </section>
+
+  <!-- ATUAÇÃO -->
+  <div class="split" id="atuacao">
+    <div class="split-panel">
       <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
         <path d="M24 8v6"/>
         <path d="M14 32c0-7 4.5-12 10-12s10 5 10 12"/>
@@ -591,39 +614,54 @@
         <path d="M8 40h32"/>
         <path d="M14 40v-4M34 40v-4M24 40v-6"/>
       </svg>
-      <h3>Eventos e cerimônias</h3>
-      <p>Trilha sonora ao vivo para casamentos, formaturas e eventos corporativos, em apresentações solo ou com o Quarteto Amabille.</p>
+      <h3>Orquestra Sinfônica da UECE</h3>
+      <p>Atuo como violinista da Orquestra Sinfônica da Universidade Estadual do Ceará (OSUECE).</p>
       <ul class="panel-list">
-        <li>Cerimônias de casamento e recepções</li>
-        <li>Eventos corporativos e institucionais</li>
-        <li>Repertório sob medida para cada ocasião</li>
+        <li>Concertos</li>
+        <li>Eventos culturais</li>
+        <li>Projetos de difusão musical</li>
       </ul>
+    </div>
+    <div class="split-panel">
+      <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 10v28M20 6v36M28 6v36M36 10v28" stroke-linecap="round"/>
+      </svg>
+      <h3>Quarteto Amábille</h3>
+      <p>Integro o Quarteto Amábille, grupo de música de câmara dedicado a apresentações em eventos e concertos.</p>
+      <a class="btn-ghost" href="https://www.instagram.com/amabille_quarteto/" target="_blank" rel="noopener" style="margin-top:6px; display:inline-block;">Ver o quarteto no Instagram →</a>
     </div>
   </div>
 
-  <!-- QUARTETO -->
-  <section class="quarteto" id="quarteto">
-    <div class="wrap">
-      <div>
-        <div class="quarteto-eyebrow">Música de câmara</div>
-        <h2>Quarteto Amabille</h2>
-        <p>Pâmela integra o Quarteto Amabille, formação de câmara dedicada a levar o repertório clássico e arranjos contemporâneos a cerimônias e eventos com o timbre característico do quarteto de cordas.</p>
-        <a class="quarteto-link" href="https://www.instagram.com/amabille_quarteto/" target="_blank" rel="noopener">Ver o quarteto no Instagram →</a>
-      </div>
-      <div class="quarteto-art" aria-hidden="true">
-        <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#E4D3BE" stroke-width="1.4">
-          <path d="M40 40c-6 20-7 34 2 48-9 2-13 16-5 26-4 10 4 22 20 24" opacity="0.8"/>
-          <path d="M100 30c-6 20-7 34 2 48-9 2-13 16-5 26-4 10 4 22 20 24" opacity="0.9"/>
-          <path d="M180 25c-7 22-8 38 2 54-10 2-14 18-6 29-4 11 5 24 22 27" />
-          <path d="M250 35c-6 20-7 34 2 48-9 2-13 16-5 26-4 10 4 22 20 24" opacity="0.85"/>
-          <line x1="40" y1="10" x2="40" y2="40"/>
-          <line x1="100" y1="4" x2="100" y2="30"/>
-          <line x1="180" y1="0" x2="180" y2="25"/>
-          <line x1="250" y1="8" x2="250" y2="35"/>
-        </svg>
-      </div>
+  <!-- ENSINO / EVENTOS -->
+  <div class="split" id="aulas-eventos">
+    <div class="split-panel" id="ensino">
+      <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M24 6c1.6 0 3 1.3 3 3s-1.4 3-3 3-3-1.3-3-3 1.4-3 3-3Z"/>
+        <path d="M24 12v10"/>
+        <path d="M17 22c-4 5-5 9-2 13-3 1-4 5-1 8-1 3 1 6 6 6.4 5-.4 7-3.4 6-6.4 3-3 2-7-1-8 3-4 2-8-2-13-2-1.6-4-1.6-6 0Z"/>
+      </svg>
+      <h3>Aulas particulares</h3>
+      <p>Ofereço aulas particulares de violino e iniciação ao piano, com atendimento individualizado para crianças, jovens e adultos.</p>
+      <ul class="panel-list">
+        <li>Violino</li>
+        <li>Iniciação ao piano</li>
+        <li>Foco no desenvolvimento técnico, artístico e musical</li>
+      </ul>
     </div>
-  </section>
+    <div class="split-panel" id="eventos">
+      <svg class="panel-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M24 6l4 8 9 1-6.5 6 1.5 9-8-4-8 4 1.5-9-6.5-6 9-1z"/>
+      </svg>
+      <h3>Eventos</h3>
+      <p>Realizo atuações musicais em cerimônias e celebrações, com a proposta de oferecer experiências musicais personalizadas.</p>
+      <ul class="panel-list">
+        <li>Casamentos</li>
+        <li>Cerimônias</li>
+        <li>Homenagens</li>
+        <li>Eventos sociais</li>
+      </ul>
+    </div>
+  </div>
 
   <div class="staff-divider" style="margin-top:70px;">
     <svg class="staff" viewBox="0 0 560 34" preserveAspectRatio="none">
@@ -641,20 +679,23 @@
     <div class="footer-grid">
       <div>
         <h2>Vamos conversar sobre a sua música?</h2>
-        <p style="margin-top:14px;">Aulas, eventos e cerimônias — escreva contando o que você precisa e Pâmela retorna com os próximos passos.</p>
+        <p style="margin-top:14px;">Aulas, eventos e cerimônias — escreva contando o que você precisa e eu retorno com os próximos passos.</p>
+        <p style="margin-top:10px; color:#8C7C64; font-size:0.9rem;">Fortaleza — CE</p>
       </div>
       <div class="footer-col">
         <h4>Contato</h4>
-        <a href="https://wa.me/5585994099690" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/5585994099690" target="_blank" rel="noopener">WhatsApp — (85) 99409-9690</a>
+        <a href="mailto:pamelaccoutinho@gmail.com">pamelaccoutinho@gmail.com</a>
       </div>
       <div class="footer-col">
-        <h4>Quarteto Amabille</h4>
-        <a href="https://www.instagram.com/amabille_quarteto/" target="_blank" rel="noopener">Instagram</a>
+        <h4>Redes sociais</h4>
+        <a href="https://www.instagram.com/pamelaviolin_/" target="_blank" rel="noopener">Instagram — @pamelaviolin_</a>
+        <a href="https://www.instagram.com/amabille_quarteto/" target="_blank" rel="noopener">Quarteto Amábille</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Pâmela Cavalcante — Violino & Piano</span>
-      <span>Musicista · Licenciatura em Música (UECE) · Especialização em Musicoterapia (CBM)</span>
+      <span>Pâmela Cavalcante — Violino &amp; Piano</span>
+      <span>Musicista · Licenciatura em Música (UECE) · Pós-graduação em Musicoterapia (CBM)</span>
     </div>
   </div>
 </footer>
